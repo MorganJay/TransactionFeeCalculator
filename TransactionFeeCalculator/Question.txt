@@ -1,0 +1,57 @@
+﻿TASK 1
+
+TRANSACTION FEE CALCULATOR
+
+Amount			Charge
+1 - 5000		10
+5001 - 50000	25
+above 50000		50
+
+Consider the scenario where transaction charge for inter-bank transfer varies based on the amount to be transferred as shown below;
+
+A transfer of N4000 will attract a charge of N10 while a transfer of N20000 will attract a charge of N25
+
+QUESTION:
+
+Write a simple program that reads the fee configuration from a file, 
+accepts an "Amount to be transferred" as input, 
+uses the amount configuration in the file to compute the expected 
+charge, and outputs the charge.
+
+
+TASK 2
+
+TRANSACTION SURCHARGE 
+
+Consider a business that accepts payments by transfer. When customers pay by transfer, the bank deducts an extra transaction charge based on the amount to be transferred as shown below;
+
+Amount	Charge
+1 - 5000	10
+5001 - 50000	25
+above 50000	50
+
+Example: A customer transferring N4000 will get debited N4010 while a customer transferring N20000 will get debited N20025.
+
+PROBLEMS
+
+The business has contracted you to help develop a small program that allows the business to bear the transaction charge instead of the customer. What this means is that the customer should be advised to transfer an amount less the bank charge, so that the customer gets debited the exact amount. i.e, a customer who is transferring N4000 would be advised to transfer N3990 so that when the bank adds the charge of N10, he gets debited N4000.
+
+TASK: Write a simple program that reads the fee configuration above from a file, accepts an "Amount to be transferred" as input, use the amount configuration in the file to compute the advised transfer Amount and the amount the customer will be debited, and provide the output as shown below;
+
+Amount	Transfer Amount	Charge	Debit Amount (Transfer Amount + Charge)
+4000	3990	10	4000
+20000	19975	25	20000
+
+Test your program with the input amounts specified below,
+
+5000, 45000, 50030
+
+DISCUSSION: In the case of the third amount (50030), did the debit amount correspond to the expected amount?
+
+* If Yes, How? - Explain 
+
+* If No, Why? - Is there anything that can be done to remedy the situation?
+
+NOTE: Ensure that the charge is based on the content of the configuration files. If the content of the configuration file is changed, the output should change accordingly.
+Please find the attached sample configuration file in XML and JSON format. Use whichever file format you are comfortable with.
+In order to know you better, kindly click the link to complete this candidate questionnaire so as to enable you to continue with the application process.
